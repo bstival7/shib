@@ -1,8 +1,39 @@
-<html>
-    <head>
+<!DOCTYPE html>
 
-    </head>
-    <body>
-        <h1>BLAH!</h1>
-    </body>
+<html>
+	<head>
+		<title>Shib Site</title>
+		<meta name="author" content="Roger Vera">
+	    <meta name="description" content="Find the perfect otter GIF">
+	    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+        <!--jQuery, linked from a CDN-->
+		<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+		<!-- Main Script -->
+		<script src="./script.js"></script>
+
+		<!-- Normalize.css is a customisable CSS file that makes 
+		browsers render all elements more consistently and in line 
+		with modern standards. -->
+		<link href="./normalize.css" rel="stylesheet">
+
+		<!-- My Style -->
+		<link href="./style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="container">
+			<!-- Header image of otter -->
+			<section id="gifSection">
+			<img id="gif" alt="Avatar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Shiba_inu_taiki.jpg/220px-Shiba_inu_taiki.jpg">
+			</section>
+		</div>
+			<!-- Header -->
+			<h1>Shib Gifs</h1>
+			<!-- Button used for search -->
+			<button id="search" onclick="fetchGif()">Get a shib!</button>
+			<!-- Section where GIF will be displayed -->
+		<div class="container">
+		</div>
+	</body>
 </html>
